@@ -20,6 +20,10 @@ body {
 }
 /* ----------------------Оформление логотипа -----------------------*/
 .logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -33,12 +37,58 @@ body {
 }
 
 /* ---------------------Оформление меню навигации ------------------*/
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.menu-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .menu-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  color: var(--primary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-color);
+}
+
+.contact-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-nav .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .menu-nav .link:hover,
