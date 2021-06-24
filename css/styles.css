@@ -45,6 +45,10 @@ body {
   padding-right: 15px;
 }
 
+.main-head {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -101,11 +105,15 @@ body {
 
 /* ---------------- Оформление меню контактов--------------------- */
 .menu-contact {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-color);
 }
 
 .menu-contact:hover,
