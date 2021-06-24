@@ -24,12 +24,13 @@ body {
   margin-bottom: 25px;
   margin-right: 93px;
 
+  color: #000000;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
 }
 
 .logo-color {
@@ -122,14 +123,22 @@ body {
 }
 
 /* --------------------Оформление раздела Hero ---------------------*/
+.hero-section {
+  background-color: #2f303a;
+}
+
 .hero-head {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: #2f303a;
+  /* background-color: #2f303a; */
   color: var(--third-color);
 }
 
