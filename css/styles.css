@@ -3,6 +3,7 @@
   --primary-color: #212121;
   --secondary-color: #757575;
   --third-color: #ffffff;
+  --hero-color: #2f303a;
 }
 
 h1,
@@ -50,6 +51,11 @@ body {
   padding-right: 15px;
 }
 
+/* ======================HEADER===================================== */
+.header-container {
+  display: flex;
+}
+
 /* ----------------------Оформление логотипа -----------------------*/
 .logo {
   margin-top: 24px;
@@ -66,12 +72,6 @@ body {
 
 .logo-color {
   color: var(--accent-color);
-}
-
-/* ---------------------- Контейнер шапки ------------------ */
-.header-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* ---------------------Оформление меню навигации ------------------*/
@@ -110,6 +110,7 @@ body {
 /* ---------------- Оформление меню контактов--------------------- */
 .contact-nav {
   display: flex;
+  margin-left: auto;
 }
 
 .contact-nav .item {
@@ -145,32 +146,27 @@ body {
 
 /* --------------------Оформление раздела Hero ---------------------*/
 .hero-section {
-  background-color: #2f303a;
+  text-align: center;
+  padding: 200px 0;
+  background-color: var(--hero-color);
 }
 
 .hero-head {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 0;
-
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* background-color: #2f303a; */
   color: var(--third-color);
 }
 
 /*-------------------- Оформление кнопки "Заказать услугу" -----------------*/
 .hero-button {
-  font-family: inherit;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--third-color);
