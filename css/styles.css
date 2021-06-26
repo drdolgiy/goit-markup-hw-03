@@ -3,7 +3,7 @@
   --primary-color: #212121;
   --secondary-color: #757575;
   --third-color: #ffffff;
-  --hero-color: #2f303a;
+  --fourth-color: #2f303a;
 }
 
 h1,
@@ -154,7 +154,7 @@ body {
 .hero {
   text-align: center;
   padding: 200px 0;
-  background-color: var(--hero-color);
+  background-color: var(--fourth-color);
 }
 
 .hero-head {
@@ -234,7 +234,7 @@ body {
 }
 
 /* --------------- Оформление раздела "Команда компании" ---------------------------- */
-.team-br-color {
+.team-section {
   background-color: #f5f4fa;
 }
 .team {
@@ -281,14 +281,20 @@ body {
 }
 
 /* --------------- Оформление футера ---------------------------- */
+.footer-section {
+  padding: 60px 0;
+  background-color: var(--fourth-color);
+}
+
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--third-color);
-  background-color: #2f303a;
 }
 
 .address-link {
@@ -296,7 +302,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-color);
-  background-color: #2f303a;
 }
 
 .contact-link {
@@ -304,13 +309,15 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #2f303a;
 }
 
 .footer-address {
   font-style: inherit;
 }
 
+.footer-contact .item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-address .link:hover,
 .footer-address .link:focus {
   color: var(--accent-color);
