@@ -215,7 +215,17 @@ body {
 }
 
 /* --------------- Оформление раздела "Чем занимается компания" ---------------------------- */
+.worklist-section {
+  padding-bottom: 94px;
+}
+
+.worklist-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .worklist {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -224,8 +234,8 @@ body {
 }
 
 /* --------------- Оформление раздела "Команда компании" ---------------------------- */
-
 .team {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -233,6 +243,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+.team-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.team-list-item {
+  margin-left: 30px;
+}
 .name {
   font-weight: 500;
   font-size: 16px;
