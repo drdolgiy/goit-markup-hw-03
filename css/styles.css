@@ -5,6 +5,28 @@
   --third-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -18,26 +40,8 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
 }
-/* ----------------------Оформление логотипа -----------------------*/
-.logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 93px;
 
-  color: #000000;
-
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.logo-color {
-  color: var(--accent-color);
-}
-
-/* ---------------------Оформление меню навигации ------------------*/
+/* ------------- Контейнер ---------------- */
 .container {
   width: 1200px;
   margin-left: auto;
@@ -46,52 +50,51 @@ body {
   padding-right: 15px;
 }
 
-.main-head {
-  border-bottom: 1px solid #ececec;
+/* ----------------------Оформление логотипа -----------------------*/
+.logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
 }
 
-.header-nav {
+.logo-color {
+  color: var(--accent-color);
+}
+
+/* ---------------------- Контейнер шапки ------------------ */
+.header-container {
   display: flex;
   justify-content: space-between;
 }
 
+/* ---------------------Оформление меню навигации ------------------*/
 .main-nav {
   display: flex;
+}
+
+.menu-nav {
+  display: flex;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
 }
 
 .menu-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .menu-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.menu-nav {
-  display: flex;
-  margin: 0;
-  padding: 0;
-
-  color: var(--primary-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.contact-nav {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-nav .item {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -105,21 +108,39 @@ body {
 }
 
 /* ---------------- Оформление меню контактов--------------------- */
+.contact-nav {
+  display: flex;
+}
+
+.contact-nav .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .menu-contact {
   display: flex;
   margin: 0;
   padding: 0;
 
-  color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--secondary-color);
 }
 
 .menu-contact:hover,
 .menu-contact:focus {
   color: var(--accent-color);
+}
+
+/* -------------- Нижняя линия шапки------------- */
+.main-head {
+  border-bottom: 1px solid #ececec;
 }
 
 /* --------------------Оформление раздела Hero ---------------------*/
