@@ -193,10 +193,13 @@ body {
 .features {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -30px;
 }
 
 .features-list {
-  width: 270px;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 
 .features-head {
@@ -330,6 +333,7 @@ body {
 .worklist-filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .worklist-filter .item:not(:last-child) {
@@ -350,14 +354,6 @@ body {
   background-color: var(--button-color);
 }
 
-.worklist-filter:not(:last-child) {
-  margin-right: 8px;
-}
-
-.filter-btn:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
@@ -365,6 +361,19 @@ body {
 }
 
 /* --------------- Оформление галерея работ ---------------------------- */
+.worklist-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.worklist-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
 .worklist-head {
   font-weight: 700;
   font-size: 18px;
